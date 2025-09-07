@@ -30,3 +30,16 @@ The application connects to a MySQL database named `student_db` and uses a table
 | `age`       | INT       | Student's age            |
 
 SQL file for this schema is included in `/database/student_db.sql`.
+
+Setup Instructions:
+1. Make sure MySQL is running (via WampServer).
+2. Import the SQL file `student_db.sql` using phpMyAdmin:
+   - Go to `http://localhost/phpmyadmin`
+   - Select the `student_db` database
+   - Click on the **Import** tab
+   - Choose the file `student_db.sql` from the `/database` folder
+   - Click **Go**
+3. Open the project in IntelliJ IDEA or Eclipse.
+4. Update your MySQL credentials in `DBConnection.java`:
+   ```java
+   DriverManager.getConnection("jdbc:mysql://localhost:3306/student_db", "root", "");
