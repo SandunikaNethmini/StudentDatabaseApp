@@ -30,7 +30,3 @@ The application connects to a MySQL database named `student_db` and uses a table
 | `age`       | INT       | Student's age            |
 
 SQL file for this schema is included in `/database/student_db.sql`.
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/yourusername/StudentDatabaseApp.git
